@@ -16,6 +16,7 @@ import { Grid } from "@mui/material";
 import { styled } from "@mui/system";
 
 import { settings ,pages} from '../utils';
+import ButtonComponent from "./Button";
 
 
 
@@ -57,32 +58,39 @@ function Header() {
   return (
     <Grid container direction="row"  alignItems="center" sx={{px:"25px",py:'16px'}}>
     <Grid item xs={8} sm={8} md={2} sx={{  display: { xs: "flex", } }} justifyContent="flex-start">
-    <Box >
-        
-        <a href="/"><img src="https://uploads-ssl.webflow.com/63f6b93e52c07002355ba424/63f6c63739759cbe020bd289_ChocoUp.svg" loading="lazy" alt="" class="navbar_logo"/></a>
-        </Box>
+    <Box> 
+        <a href="/"><img src="https://uploads-ssl.webflow.com/63f6b93e52c07002355ba424/63f6c63739759cbe020bd289_ChocoUp.svg" loading="lazy" alt="" className="navbar_logo"/></a>
+    </Box>
     </Grid>
     <Grid item sx={{  display: { xs: "none",sm:"none",md:"flex" } }} md={8} justifyContent="center">
     
             {pages.map((page) => (
-              <Button
+              <ButtonComponent
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "black", display: "block" ,fontWeight:"bolder" ,fontSize:"18px",textTransform:"None"}}
-              >
-                {page}
-              </Button>
+                color="black"
+                 label={page}
+                backgroundColor="#fff"
+                
+             / >
+                
             ))}
           
     </Grid>
     <Grid item xs={4} sm={4} md={2}  justifyContent="flex-end">
-    <Button
-    contained
-    fullWidth
+    <ButtonComponent
+    variant="contained"
+    
     onClick={handleOpenUserMenu}
-    sx={{ color: "#7352ff", backgroundColor: "#fff" ,fontWeight:"bolder",px:"35px",py:"10px",borderRadius:"30px" ,textTransform:"None" ,fontSize:"16px",display: { xs: "none",sm:"none", md:"flex"}}}>
-    Get Funded
-    </Button>
+    color="#7352ff"
+    backgroundColor="#fff"
+    borderRadius="30px"
+    sx={{display: { xs: "none",sm:"none", md:"flex"}}}
+    label="Get Funded"
+    
+
+    
+    />
       <Box sx={{display:{xs:"flex",md:"none"},justifyContent:"flex-end"}}>
         <IconButton
           size="large"

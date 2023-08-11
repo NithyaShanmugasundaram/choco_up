@@ -1,0 +1,47 @@
+.carousel-wrapper {
+    
+  .rec-pagination {
+    display: none;
+  }
+  .rec-arrow-right ,.rec-arrow-left{
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    box-sizing: none;
+    transition: none;
+    font-size: 1.6em;
+    background-color: transparent;
+    color: #333;
+    box-shadow: none;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    min-width: 0px;
+    line-height: 50px;
+    align-self: center;
+    cursor: pointer;
+    outline: none;
+    
+  }
+  
+.dGpCqk:hover:enabled, .dGpCqk:focus:enabled {
+    color: black;
+    background-color: transparent;
+    box-shadow: none;
+}
+.gaMgAy:hover:enabled, .dGpCqk:focus:enabled {
+    color: black;
+    background-color: transparent;
+    box-shadow: none;
+}
+    
+
+    
+}
+
+
+
+
+ 
+
+
