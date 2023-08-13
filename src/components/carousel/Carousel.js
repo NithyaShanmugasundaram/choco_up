@@ -1,11 +1,10 @@
 import React from "react";
 import Carousel from "react-elastic-carousel";
 import { styled } from "@mui/system";
-import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
-import AvatarComponent from "./Avatar";
-import { breakPoints } from "../utils";
+import AvatarComponent from "../Avatar";
+import { breakPoints } from "../../utils";
 import { Grid  } from "@mui/material";
 import "./Carousel.css";
 
@@ -29,9 +28,9 @@ function CardSlider({ data }) {
   return (
     <div className="carousel-wrapper" style={{width:"100%"}}>
       <Carousel breakPoints={breakPoints}>
-        {data.length > 0 &&
-          data.map((item) => (
-            <Item key={item}>
+        {data ?
+          data.map((item,index) => (
+            <Item key={index}>
               <Grid
                 container
                 justifyContent="space-around"
@@ -44,6 +43,7 @@ function CardSlider({ data }) {
                     image={item.image}
                     color="#7352ff"
                     width="auto"
+                    height="100px"
                     
                 />
                 </Grid>
@@ -56,7 +56,7 @@ function CardSlider({ data }) {
                 </Grid>
               </Grid>
             </Item>
-          ))}
+          )):<div className="not-available">User data not available.</div>}
       </Carousel>
     </div>
   );

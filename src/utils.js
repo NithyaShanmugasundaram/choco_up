@@ -7,3 +7,8 @@ export const breakPoints = [
     { width: 1200, itemsToShow: 4 },
   ];
   export const pages = ["Funding", "Success Stories", "Partners","About","Resources","Login"];
+  export const companyList=["About us","Contact"];
+  export const blogList=["Blog","Founderperks","Press"];
+  export const successList=["BuyHive","Jaco","Soundbrenner"];
+  export const supportList=["Contact us","FAQ"];
+  export const legalList=["Privacy policy","Terms of service"];

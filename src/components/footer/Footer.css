@@ -1,0 +1,35 @@
+.footer {
+    padding:48px 40px;
+    color: #fff;
+    background-color: #061849;
+    margin-top: 20px;
+}
+.footer-link-text{
+    font-size: 18px;
+    font-weight: 500;
+}
+.footer-link {
+    width: 2rem;
+    height: 2rem;
+    margin: 5px;
+    transition: "all .4s";
+    
+}
+.footer_social-wrapper{
+    margin-top: 0.5rem;
+    display: flex;
+
+}
+.list_title{
+    color: #95fcfd;
+    font-size:20px;
+    font-weight: 500;
+    margin-bottom:5px;
+}
+.list_item{
+    color: #fff;
+    font-size:18px;
+    font-weight: 500;
+    padding-bottom:5px;
+    padding-top:5px;
+}

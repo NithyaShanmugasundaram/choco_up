@@ -1,8 +1,7 @@
-import "./App.css";
-import Header from "./components/Header";
-import Content from "./components/Content";
+import Header from "./components/header/Header";
+import Content from "./components/content/Content";
 import { styled } from "@mui/system";
-import { Container } from "@mui/material";
+import Footer from "./components/footer/Footer";
 
 export const BackgroundContainer = styled("div")({
   position: "relative",
@@ -20,6 +19,7 @@ function App() {
     <BackgroundContainer>
       <Header />
       <Content />
+      <Footer/>
     </BackgroundContainer>
   );
 }

@@ -10,6 +10,7 @@ function Features({ feature }) {
             item
             md={5}
             sx={{ paddingLeft: "120px", display: { xs: "none", md: "flex" } }}
+            key={item}
           >
             <span
               style={{
@@ -31,7 +32,7 @@ function Features({ feature }) {
       })}
       {feature.map((item) => {
         return (
-          <Grid item xs={12} sx={{ display: { xs: "flex", md: "none" } }}>
+          <Grid item xs={12} sx={{ display: { xs: "flex", md: "none" } }} key={item}>
             <span
               style={{
                 display: "flex",

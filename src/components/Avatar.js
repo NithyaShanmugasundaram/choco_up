@@ -1,6 +1,5 @@
 import React from "react";
 import { styled } from "@mui/system";
-import Typography from "@mui/material/Typography";
 import { Avatar } from "@mui/material";
 
 const StyledAvatar = styled(Avatar)(({ color, width, height }) => ({
@@ -10,15 +9,14 @@ const StyledAvatar = styled(Avatar)(({ color, width, height }) => ({
 }));
 
 function AvatarComponent({ variant, image, color, width, height, alt, label }) {
-    console.log(label)
   return (
     <>
       {label ? (
-        <StyledAvatar variant={variant} color={color}>
+        <StyledAvatar variant={variant} color={color} width={width} height={height}>
           {label}
         </StyledAvatar>
       ) : (
-        <StyledAvatar variant={variant} src={image} color={color} alt={alt}>
+        <StyledAvatar variant={variant} src={image} color={color} alt={alt} width={width} height={height}>
         </StyledAvatar>
       )}
     </>
